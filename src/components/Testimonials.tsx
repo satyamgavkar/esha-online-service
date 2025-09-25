@@ -30,7 +30,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-gray-50">
+    <section id="testimonials" className="py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -45,7 +45,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 border-orange-100 hover:border-orange-300"
             >
               <div className="flex items-center mb-4">
                 <img
@@ -72,7 +72,7 @@ const Testimonials = () => {
               </div>
 
               <div className="pt-3 border-t border-gray-100">
-                <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-medium">
+                <span className="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full font-medium">
                   {testimonial.service}
                 </span>
               </div>
@@ -81,19 +81,19 @@ const Testimonials = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="bg-blue-600 text-white rounded-xl p-8">
+          <div className="bg-gradient-to-r from-orange-600 to-green-600 text-white rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-4">Join 5000+ Satisfied Customers</h3>
-            <p className="text-blue-100 mb-6">
+            <p className="text-orange-100 mb-6">
               Experience hassle-free government document services with our expert team.
             </p>
-            <button 
+            <button
               onClick={() => {
                 const element = document.getElementById('contact');
                 if (element) {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors"
             >
               Start Your Application Today
             </button>

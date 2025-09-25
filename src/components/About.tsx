@@ -1,125 +1,95 @@
 import React from 'react';
-import { Users, CheckCircle, Clock, Star, Award, Shield } from 'lucide-react';
+import { Shield, Users, Clock, Award } from 'lucide-react';
 
 const About = () => {
-  const stats = [
-    { icon: Users, number: '5000+', label: 'Happy Clients' },
-    { icon: CheckCircle, number: '15000+', label: 'Documents Processed' },
-    { icon: Clock, number: '7+', label: 'Years Experience' },
-    { icon: Star, number: '4.9/5', label: 'Client Rating' }
-  ];
-
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gradient-to-br from-orange-50 to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Content */}
-          <div>
-            <div className="relative mb-8">
-              <img 
-                src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Professional team working"
-                className="w-full h-64 object-cover rounded-xl shadow-lg"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-4 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold">7+</div>
-                <div className="text-sm">Years Experience</div>
-              </div>
-            </div>
-            
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Why Choose Esha Online Service?
-            </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              We are a trusted partner for all your government document needs, providing 
-              professional assistance with a commitment to accuracy, speed, and customer satisfaction.
-            </p>
-            
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-lg p-1.5 mt-0.5">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Expert Knowledge</h3>
-                  <p className="text-gray-600">Our team stays updated with the latest government procedures and requirements.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-lg p-1.5 mt-0.5">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">End-to-End Service</h3>
-                  <p className="text-gray-600">From document preparation to final submission, we handle everything for you.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-lg p-1.5 mt-0.5">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Transparent Process</h3>
-                  <p className="text-gray-600">Regular updates and clear communication throughout the entire process.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <div className="bg-green-100 rounded-lg p-1.5 mt-0.5">
-                  <CheckCircle className="h-4 w-4 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Competitive Pricing</h3>
-                  <p className="text-gray-600">Fair and transparent pricing with no hidden charges.</p>
-                </div>
-              </div>
-            </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            About Our Services
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            We are your trusted partner for all government document services, providing reliable and efficient solutions for over 5 years.
+          </p>
+        </div>
 
-            <button 
-              onClick={() => {
-                const element = document.getElementById('contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
-            >
-              Start Your Application
-            </button>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border-2 border-orange-100 hover:border-orange-300 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Shield className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Trusted Service</h3>
+            <p className="text-gray-600">Government authorized and certified service provider</p>
           </div>
 
-          {/* Right Column - Stats */}
-          <div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-200/30 rounded-full -translate-y-16 translate-x-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-300/20 rounded-full translate-y-12 -translate-x-12"></div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Our Track Record</h3>
-              
-              <div className="grid grid-cols-2 gap-6">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center group">
-                    <div className="bg-white rounded-lg p-4 shadow-sm mb-3 group-hover:shadow-md transition-shadow duration-300">
-                      <stat.icon className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{stat.number}</div>
-                    </div>
-                    <div className="text-sm text-gray-700 font-medium">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border-2 border-green-100 hover:border-green-300 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Users className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">5000+ Clients</h3>
+            <p className="text-gray-600">Successfully served thousands of satisfied customers</p>
+          </div>
 
-              <div className="mt-8 text-center">
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <div className="flex items-center justify-center space-x-4 mb-3">
-                    <Shield className="h-6 w-6 text-blue-600" />
-                    <Award className="h-6 w-6 text-green-600" />
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border-2 border-orange-100 hover:border-orange-300 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Clock className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Quick Processing</h3>
+            <p className="text-gray-600">Fast and efficient document processing services</p>
+          </div>
+
+          <div className="text-center p-6 bg-white rounded-xl shadow-sm border-2 border-green-100 hover:border-green-300 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Award className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert Team</h3>
+            <p className="text-gray-600">Experienced professionals handling your documents</p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-orange-200">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Why Choose Our Services?
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-700">Government authorized service provider</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-700">Transparent pricing with no hidden charges</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-700">Regular updates on application status</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-700">Expert guidance throughout the process</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-700">Secure handling of all documents</span>
+                </li>
+              </ul>
+            </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-orange-100 to-green-100 rounded-xl p-8">
+                <h4 className="text-3xl font-bold text-gray-900 mb-2">5+ Years</h4>
+                <p className="text-gray-600 mb-4">of trusted service</p>
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-orange-600">5000+</div>
+                    <div className="text-sm text-gray-600">Happy Clients</div>
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Certified & Trusted</h4>
-                  <p className="text-sm text-gray-600">
-                    Authorized service provider with government recognition and customer trust.
-                  </p>
+                  <div>
+                    <div className="text-2xl font-bold text-green-600">99%</div>
+                    <div className="text-sm text-gray-600">Success Rate</div>
+                  </div>
                 </div>
               </div>
             </div>

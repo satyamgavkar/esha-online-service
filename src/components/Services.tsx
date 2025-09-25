@@ -249,12 +249,12 @@ const Services = () => {
           
           {/* Language Toggle */}
           <div className="flex justify-center mt-8">
-            <div className="bg-white rounded-lg p-1 shadow-sm border border-gray-200">
+            <div className="bg-white rounded-lg p-1 shadow-sm border-2 border-orange-200">
               <button
                 onClick={() => setLanguage('english')}
                 className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                   language === 'english'
-                    ? 'bg-blue-600 text-white shadow-sm'
+                    ? 'bg-orange-600 text-white shadow-sm'
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
@@ -264,7 +264,7 @@ const Services = () => {
                 onClick={() => setLanguage('marathi')}
                 className={`px-6 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                   language === 'marathi'
-                    ? 'bg-blue-600 text-white shadow-sm'
+                    ? 'bg-orange-600 text-white shadow-sm'
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
@@ -278,7 +278,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group"
+              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-orange-100 hover:border-orange-300 group"
             >
               {/* Service Image */}
               <div className="relative h-40 overflow-hidden">
@@ -289,7 +289,7 @@ const Services = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg w-10 h-10 flex items-center justify-center">
-                  <service.icon className="h-5 w-5 text-blue-600" />
+                  <service.icon className="h-5 w-5 text-orange-600" />
                 </div>
               </div>
               
@@ -308,7 +308,7 @@ const Services = () => {
                 
                 <button 
                   onClick={() => handleGetStarted(service)}
-                  className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-700 transition-all duration-300 flex items-center justify-center space-x-2"
+                  className="w-full bg-gradient-to-r from-orange-600 to-orange-700 text-white py-3 px-4 rounded-lg text-sm font-medium hover:from-orange-700 hover:to-orange-800 transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-orange-800 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
                   <span>{language === 'english' ? 'Get Started' : 'सुरुवात करा'}</span>
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -319,7 +319,7 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+          <div className="bg-gradient-to-r from-orange-50 to-green-50 rounded-xl p-8 shadow-sm border-2 border-orange-200">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Don't see what you're looking for?</h3>
             <p className="text-gray-600 mb-6">We handle all types of government documentation. Contact us for custom services.</p>
             <button 
@@ -329,7 +329,7 @@ const Services = () => {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl border-2 border-orange-700"
             >
               Contact Us for Custom Services
             </button>
