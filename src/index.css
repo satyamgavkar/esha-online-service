@@ -5,3 +5,28 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Remove I-beam/text cursor and text selection from non-form elements */
+:where(:not(input, textarea, select, [contenteditable="true"])) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    caret-color: transparent;
+}
+
+/* Default cursor everywhere, with low specificity so utilities can override */
+body :where(*) {
+    cursor: default;
+}
+
+/* Restore expected cursors and selection for interactive/form elements */
+a, button, [role="button"] {
+    cursor: pointer;
+}
+
+input, textarea, select, [contenteditable="true"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+    cursor: text;
+}
