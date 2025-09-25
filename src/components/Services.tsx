@@ -20,49 +20,49 @@ const Services = () => {
   const servicesEnglish = [
     {
       icon: CreditCard,
-      image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://media.assettype.com/outlookmoney/2024-12-07/3cguwiua/111121552.jpg.webp?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0',
       title: 'PAN Card',
       description: 'Apply for new PAN card, corrections, duplicate card issuance, and Aadhaar-PAN linking',
-      features: ['New PAN Application', 'PAN Correction', 'Duplicate PAN', 'आधार पॅन लिंक (Aadhar-PAN Link)']
+      features: ['New PAN Application', 'PAN Correction', 'Duplicate PAN', 'Aadhar-PAN Link']
     },
     {
       icon: FileText,
-      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://www.indiafilings.com/learn/wp-content/uploads/2017/10/How-to-File-Income-Tax-Return.jpg',
       title: 'Income Tax Return',
       description: 'New and revised income tax return filing services',
       features: ['ITR Filing', 'Tax Consultation', 'Document Preparation', 'Revised Returns']
     },
     {
       icon: FileText,
-      image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://m.media-amazon.com/images/I/71eGdf7X3rL._UF1000,1000_QL80_.jpg',
       title: 'Certificates',
       description: 'Various government certificates including birth, marriage, income, and caste certificates',
       features: ['Sub Birth Certificate', 'Marriage Certificate', 'Income Certificate', 'Caste Certificate']
     },
     {
       icon: Plane,
-      image: 'https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://wpblogassets.paytm.com/paytmblog/uploads/2024/01/Blog_Paytm_Passport-Renewal-1024x640.jpeg',
       title: 'Passport Services',
       description: 'Fresh passport, renewal, tatkal services, and related document assistance',
       features: ['New Passport', 'Passport Renewal', 'Tatkal Service', 'Life, Health & Driving']
     },
     {
       icon: FileText,
-      image: 'https://images.pexels.com/photos/6177638/pexels-photo-6177638.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://advocateadvice.in/wp-content/uploads/2025/01/Name-Change-in-Pan-Card.jpg',
       title: 'Gazette Correction',
       description: 'Name and date of birth correction through gazette notification',
       features: ['Name Correction', 'DOB Correction', 'State Name Correction', 'Legal Documentation']
     },
     {
       icon: User,
-      image: 'https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://static.india.com/wp-content/uploads/2019/10/Voter-ID.jpg?impolicy=Medium_Resize&w=1200&h=800',
       title: 'Voter ID',
       description: 'New voter ID registration and correction services',
       features: ['New Registration', 'Correction', 'Address Change', 'Duplicate Card']
     },
     {
       icon: Heart,
-      image: 'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://articles.pbpartners.com/images/pb-blog/health/health-insurance-premium-rising.png',
       title: 'Ayushman Card',
       description: 'Health insurance card applications and National Health ID services',
       features: ['Ayushman Card', 'National Health ID', 'Health Insurance', 'Medical Certificate']
@@ -83,14 +83,14 @@ const Services = () => {
     },
     {
       icon: Building,
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://images.tv9hindi.com/wp-content/uploads/2023/02/EPFO-TV9.jpg',
       title: 'EPF/PF Services',
       description: 'Employee Provident Fund services including closure and withdrawal',
       features: ['EPF Closure', 'PF Services', 'Withdrawal Process', 'Account Transfer']
     },
     {
       icon: User,
-      image: 'https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://www.aajsamaaj.com/wp-content/uploads/2024/12/e-shram-card-.webp',
       title: 'E-Shram Card',
       description: 'Registration for unorganized workers under e-Shram portal',
       features: ['New Registration', 'Document Upload', 'Benefits Access', 'Status Tracking']
@@ -111,14 +111,14 @@ const Services = () => {
     },
     {
       icon: CreditCard,
-      image: 'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://www.empirecalls.co.in/img/recharge-api-india-all-operators.jpg',
       title: 'Mobile/DTH Recharge',
       description: 'Mobile and DTH recharge services for all operators',
       features: ['All Network Recharge', 'DTH Recharge', 'Bill Payment', 'Special Offers']
     },
     {
       icon: User,
-      image: 'https://images.pexels.com/photos/6177638/pexels-photo-6177638.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://images.hindustantimes.com/tech/img/2022/06/12/1600x900/PTI09-03-2021-000080A-0_1636198420627_1655027637655.jpg',
       title: 'Aadhaar Card Services',
       description: 'New registration, updates, corrections, mobile linking, and copy services',
       features: ['Address Update', 'Name Correction', 'DOB Update', 'Aadhar Copy']
@@ -128,49 +128,49 @@ const Services = () => {
   const servicesMarathi = [
     {
       icon: CreditCard,
-      image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://media.assettype.com/outlookmoney/2024-12-07/3cguwiua/111121552.jpg.webp?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0',
       title: 'पॅन कार्ड',
       description: 'नवीन पॅन कार्ड, दुरुस्ती, डुप्लिकेट कार्ड आणि आधार-पॅन लिंकिंग',
       features: ['नवीन पॅन अर्ज', 'पॅन दुरुस्ती', 'डुप्लिकेट पॅन', 'आधार पॅन लिंक']
     },
     {
       icon: FileText,
-      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://www.indiafilings.com/learn/wp-content/uploads/2017/10/How-to-File-Income-Tax-Return.jpg',
       title: 'इन्कम टॅक्स रिटर्न',
       description: 'नवीन आणि सुधारित इन्कम टॅक्स रिटर्न फाइलिंग सेवा',
       features: ['आयटीआर फाइलिंग', 'सुधारित रिटर्न', 'कर सल्ला', 'कागदपत्र तयारी']
     },
     {
       icon: FileText,
-      image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://m.media-amazon.com/images/I/71eGdf7X3rL._UF1000,1000_QL80_.jpg',
       title: 'प्रमाणपत्रे',
       description: 'जन्म, विवाह, उत्पन्न आणि जात प्रमाणपत्रांसह विविध सरकारी प्रमाणपत्रे',
       features: ['उपजन्म शुध्दता', 'विवाह शुध्दता', 'इन्कम प्रमाणपत्र', 'जात प्रमाणपत्र']
     },
     {
       icon: Plane,
-      image: 'https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://wpblogassets.paytm.com/paytmblog/uploads/2024/01/Blog_Paytm_Passport-Renewal-1024x640.jpeg',
       title: 'पासपोर्ट सेवा',
       description: 'नवीन पासपोर्ट, नूतनीकरण, तत्काळ सेवा आणि संबंधित कागदपत्र सहाय्य',
       features: ['नवीन पासपोर्ट', 'पासपोर्ट नूतनीकरण', 'तत्काळ सेवा', 'लाईफ, हेल्थ व ड्रायव्हिंग']
     },
     {
       icon: FileText,
-      image: 'https://images.pexels.com/photos/6177638/pexels-photo-6177638.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://advocateadvice.in/wp-content/uploads/2025/01/Name-Change-in-Pan-Card.jpg',
       title: 'राजपत्र सुधारणा',
       description: 'राजपत्र अधिसूचनेद्वारे नाव आणि जन्मतारखेची दुरुस्ती',
       features: ['नाव दुरुस्ती', 'जन्मतारखेची दुरुस्ती', 'राज्य नावे दुरुस्ती', 'कायदेशीर कागदपत्रे']
     },
     {
       icon: User,
-      image: 'https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://static.india.com/wp-content/uploads/2019/10/Voter-ID.jpg?impolicy=Medium_Resize&w=1200&h=800',
       title: 'मतदार ओळखपत्र',
       description: 'नवीन मतदार ओळखपत्र नोंदणी आणि दुरुस्ती सेवा',
       features: ['नवीन मतदार नोंदणी', 'दुरुस्तीकरण', 'पत्ता बदल', 'डुप्लिकेट कार्ड']
     },
     {
       icon: Heart,
-      image: 'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://articles.pbpartners.com/images/pb-blog/health/health-insurance-premium-rising.png',
       title: 'आयुष्मान कार्ड',
       description: 'आरोग्य विमा कार्ड अर्ज आणि राष्ट्रीय आरोग्य आयडी सेवा',
       features: ['आयुष्मान कार्ड', 'नॅशनल हेल्थ आयडी', 'आरोग्य विमा', 'वैद्यकीय प्रमाणपत्र']
@@ -191,14 +191,14 @@ const Services = () => {
     },
     {
       icon: Building,
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://images.tv9hindi.com/wp-content/uploads/2023/02/EPFO-TV9.jpg',
       title: 'ई पी एफ / पी एफ सेवा',
       description: 'कर्मचारी भविष्य निर्वाह निधी सेवा आणि बंद करण्याचे काम',
       features: ['ईपीएफ बंद', 'भविष्य निर्वाह निधी', 'पैसे काढण्याची प्रक्रिया', 'खाते हस्तांतरण']
     },
     {
       icon: User,
-      image: 'https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://www.aajsamaaj.com/wp-content/uploads/2024/12/e-shram-card-.webp',
       title: 'ई-श्रम कार्ड',
       description: 'ई-श्रम पोर्टलअंतर्गत असंघटित कामगारांची नोंदणी',
       features: ['नवीन नोंदणी', 'कागदपत्र अपलोड', 'फायद्यांचा प्रवेश', 'स्थिती ट्रॅकिंग']
@@ -219,14 +219,14 @@ const Services = () => {
     },
     {
       icon: CreditCard,
-      image: 'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://www.empirecalls.co.in/img/recharge-api-india-all-operators.jpg',
       title: 'मोबाईल/DTH रिचार्ज',
       description: 'सर्व ऑपरेटरसाठी मोबाईल आणि DTH रिचार्ज सेवा',
       features: ['सर्व नेटवर्क रिचार्ज', 'DTH रिचार्ज', 'बिल पेमेंट', 'विशेष ऑफर']
     },
     {
       icon: User,
-      image: 'https://images.pexels.com/photos/6177638/pexels-photo-6177638.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
+      image: 'https://images.hindustantimes.com/tech/img/2022/06/12/1600x900/PTI09-03-2021-000080A-0_1636198420627_1655027637655.jpg',
       title: 'आधार कार्ड सेवा',
       description: 'नवीन नोंदणी, अपडेट, दुरुस्ती, मोबाईल लिंकिंग आणि कॉपी सेवा',
       features: ['पत्ता अपडेट', 'नाव दुरुस्ती', 'जन्मतारीख अपडेट', 'आधारचे प्रताधिकार']
