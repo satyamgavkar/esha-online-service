@@ -10,4 +10,27 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBJcr7fLSd8nRLuABkxbM4wroDAb8IAj3E",
+    authDomain: "esha-online-service.firebaseapp.com",
+    projectId: "esha-online-service",
+    storageBucket: "esha-online-service.firebasestorage.app",
+    messagingSenderId: "118896156393",
+    appId: "1:118896156393:web:5600156ad4f30190645a78",
+    measurementId: "G-Q7EEJM724J"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </html>
