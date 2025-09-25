@@ -8,7 +8,7 @@ const Team = () => {
       role: 'Founder & CEO',
       type: 'owner',
       image: '/sanket_shinde.jpg',
-      description: 'With over 7 years of experience in government documentation services, Esha founded the company to simplify bureaucratic processes for common citizens.',
+      description: 'With over seven years of experience in government documentation services, Sanket founded the company with the vision of simplifying bureaucratic processes for everyday citizens.',
       expertise: ['Government Documentation', 'Business Strategy', 'Client Relations'],
       email: 'eshaonlineservice@gmail.com',
       phone: '+91 79775 91178',
